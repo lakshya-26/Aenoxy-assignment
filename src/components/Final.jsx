@@ -9,9 +9,9 @@ const Final = () => {
     setSelectedBox(boxId);
   };
   return (
-    <div className="p-36">
+    <div className="py-10 px-10">
       <div className="mb-20">
-        <h1 className="text-center font-bold md:text-4xl text-2xl mb-4">
+        <h1 className="text-center font-bold md:text-4xl text-xl md:mb-4 mb-2">
           Learning paths on your answers
         </h1>
         <p className="text-center">
@@ -20,7 +20,7 @@ const Final = () => {
       </div>
       <div className="flex flex-wrap md:space-x-8 items-center justify-center">
         <div
-          className={`md:mb-0 mb-8 option relative flex border-2 rounded-lg p-8 w-[400px] ${
+          className={`md:mb-0 mb-8 option relative flex border-2 rounded-lg p-8 md:w-[400px] w-[300px] ${
             selectedBox === 1 ? "selected" : ""
           }`}
           onClick={() => handleBoxClick(1)}
@@ -40,7 +40,7 @@ const Final = () => {
           </div>
         </div>
         <div
-          className={`option w-[400px] flex border-2 rounded-lg p-8 ${
+          className={`option md:w-[400px] w-[300px] flex border-2 rounded-lg p-8 ${
             selectedBox === 2 ? "selected" : ""
           }`}
           onClick={() => handleBoxClick(2)}

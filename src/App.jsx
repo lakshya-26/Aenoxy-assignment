@@ -85,7 +85,7 @@ const StepForm = () => {
       default:
         return (
           <div
-            className={`p-4 step-content ${
+            className={`step-content ${
               transitioning ? "transitioning" : ""
             }`}
           >
