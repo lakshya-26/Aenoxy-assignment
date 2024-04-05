@@ -15,15 +15,15 @@ const MathComfort = ({ handle }) => {
   return (
     <div>
       <div className="mb-20">
-        <h1 className="text-center text-4xl font-bold mb-4">
+        <h1 className="text-center md:text-4xl text-2xl font-bold mb-4">
           What is your math comfort level ?
         </h1>
-        <p className="text-center text-xl">
+        <p className="text-center md:text-xl">
           Choose the highest level you feel confident in - you can always adjust
           later.
         </p>
       </div>
-      <div className="flex flex-wrap justify-center space-x-8">
+      <div className="flex md:flex-row flex-col items-center justify-center md:space-x-8 space-y-8">
         <BoxOption
           image={image1}
           title={"Arithmetic"}

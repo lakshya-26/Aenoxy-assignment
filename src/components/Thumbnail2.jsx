@@ -6,11 +6,11 @@ import Button from "../utils/Button";
 const Thumbnail2 = ({ handle }) => {
   return (
     <>
-      <div className="py-16 px-32 flex items-center justify-between">
-        <div className="ml-16 w-full">
+      <div className="py-16 md:px-32 px-8 flex md:flex-row flex-col items-center justify-between">
+        <div className="md:ml-16 lg:w-[100%] md:w-[500px] w-[100%]">
           <img src={image1} alt="image" className="" />
         </div>
-        <div className="ml-[100px]">
+        <div className="lg:ml-[100px] ml-[50px]">
           <h1 className="text-4xl mb-6 font-bold">You're on your way!</h1>
           <img src={image2} alt="image" />
           <p className="mb-8 text-xl">

@@ -5,13 +5,13 @@ import Button from "../utils/Button";
 const Thumbnail1 = ({ handle }) => {
   return (
     <>
-      <div className="py-10 px-32 flex items-center justify-between">
-        <div className="ml-20 w-[50%]">
+      <div className="py-10 lg:px-32 flex md:flex-row flex-col items-center justify-between">
+        <div className="md:ml-20 lg:w-[50%] md:w-[500px] w-[50%]">
           <img src={image} alt="image" className="" />
         </div>
-        <div className="ml-[200px]">
-          <h1 className="text-4xl mb-6 font-bold">You're in the right place</h1>
-          <p className="text-xl w-[90%]">
+        <div className="lg:ml-[200px] md:ml-[50px]">
+          <h1 className="md:text-4xl sm:text-2xl text-xl md:text-left text-center mb-6 font-bold">You're in the right place</h1>
+          <p className="md:text-xl text-lg md:text-left text-center w-[90%]">
             Brilliant gets you hands-on to improve your professional skills and
             knowledge. You'll interact with concepts and solve fun problems in
             math, science, and computer science.

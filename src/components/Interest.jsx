@@ -17,10 +17,10 @@ const Interest = ({ handle }) => {
   return (
     <div>
       <div>
-        <h1 className="mt-10 mb-4 text-center text-4xl font-bold">
+        <h1 className="mt-10 mb-4 text-center sm:text-4xl text-lg font-bold">
           Which are you most interested in ?
         </h1>
-        <p className="text-center text-xl mb-14">
+        <p className="text-center sm:text-xl text-sm mb-14">
           Choose just one. This will help us get you started (but won't limit
           your experience).
         </p>

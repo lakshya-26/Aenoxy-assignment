@@ -98,7 +98,7 @@ const StepForm = () => {
   const progressWidth = `${(step / totalSteps) * 100}%`;
 
   return (
-    <>
+    <div className="">
       <div
         className={`pt-12 px-8 flex flex-row items-center justify-center ${
           step > 5 ? "hidden" : ""
@@ -122,8 +122,8 @@ const StepForm = () => {
           ></div>
         </div>
       </div>
-      <div className="px-8 flex flex-col items-center">{renderStep()}</div>
-    </>
+      <div className="flex flex-col items-center justify-center">{renderStep()}</div>
+    </div>
   );
 };
 

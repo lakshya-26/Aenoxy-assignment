@@ -11,14 +11,14 @@ const Final = () => {
   return (
     <div className="p-36">
       <div className="mb-20">
-        <h1 className="text-center font-bold text-4xl mb-4">
+        <h1 className="text-center font-bold md:text-4xl text-2xl mb-4">
           Learning paths on your answers
         </h1>
         <p className="text-center">
           Choose one to get started. You can switch anytime
         </p>
       </div>
-      <div className="flex flex-wrap space-x-8 items-center justify-center">
+      <div className="flex flex-wrap md:space-x-8 space-y-8 items-center justify-center">
         <div
           className={`option relative flex border-2 rounded-lg p-8 w-[400px] ${
             selectedBox === 1 ? "selected" : ""

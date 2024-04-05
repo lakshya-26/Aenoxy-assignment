@@ -16,12 +16,12 @@ const Profession = ({ handle }) => {
   };
 
   return (
-    <div>
-      <div>
-        <h1 className="mt-10 mb-4 text-center text-4xl font-bold">
+    <div className="">
+      <div className="">
+        <h1 className="mt-10 mb-4 text-center sm:text-4xl text-xl font-bold">
           Which describes you best ?
         </h1>
-        <p className="text-center text-xl mb-14">
+        <p className="text-center sm:text-xl text-sm mb-14">
           This will help us personalize your experience
         </p>
       </div>
