@@ -12,14 +12,14 @@ import Path from "./components/Path";
 const StepForm = () => {
   const [step, setStep] = useState(1);
   const totalSteps = 5; // Total number of steps in the form
-  const [transitioning, setTransitioning] = useState(false);
+  const [transitioning, setTransitioning] = useState(false);//smooth transitioning
 
   const handleNext = () => {
     setTransitioning(true);
     setTimeout(() => {
       setStep(step + 1);
       setTransitioning(false);
-    }, 500); // Adjust the timeout duration to match your transition duration
+    }, 500); // timeout duration for transition 
   };
 
   const handlePrev = () => {
@@ -28,8 +28,9 @@ const StepForm = () => {
       setStep(step - 1);
       setTransitioning(false);
     }, 500);
-  };
+  };// for going back to previous page
 
+  // rendering steps in different components based on current step value
   const renderStep = () => {
     switch (step) {
       case 1:
@@ -95,6 +96,7 @@ const StepForm = () => {
     }
   };
 
+  // progresswidth bar calculation
   const progressWidth = `${(step / totalSteps) * 100}%`;
 
   return (
