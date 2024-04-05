@@ -23,7 +23,7 @@ const MathComfort = ({ handle }) => {
           later.
         </p>
       </div>
-      <div className="flex md:flex-row flex-col items-center justify-center md:space-x-8 space-y-8">
+      <div className="flex md:flex-row flex-col items-center justify-center md:space-x-8">
         <BoxOption
           image={image1}
           title={"Arithmetic"}

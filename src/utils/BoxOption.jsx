@@ -11,7 +11,7 @@ const BoxOption = ({
 }) => {
   return (
     <div
-      className={`option md:w-[20%] w-[50%] p-10 border-2 rounded-xl flex flex-col items-center justify-center cursor-pointer ${
+      className={`md:mb-0 mb-8 option md:w-[20%] w-[50%] p-10 border-2 rounded-xl flex flex-col items-center justify-center cursor-pointer ${
         isSelected ? "selected" : ""
       }`}
       onClick={onOptionSelect}

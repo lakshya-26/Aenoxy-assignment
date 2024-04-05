@@ -18,9 +18,9 @@ const Final = () => {
           Choose one to get started. You can switch anytime
         </p>
       </div>
-      <div className="flex flex-wrap md:space-x-8 space-y-8 items-center justify-center">
+      <div className="flex flex-wrap md:space-x-8 items-center justify-center">
         <div
-          className={`option relative flex border-2 rounded-lg p-8 w-[400px] ${
+          className={`md:mb-0 mb-8 option relative flex border-2 rounded-lg p-8 w-[400px] ${
             selectedBox === 1 ? "selected" : ""
           }`}
           onClick={() => handleBoxClick(1)}
